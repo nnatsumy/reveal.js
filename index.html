@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>APIs HTML 5</title>
+		<title>APIs HTML5</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -40,53 +40,95 @@
 				</section>
 
 				<section data-background="lightblue">
-					<h3>História</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
-					<p>Communication is done over HTTPS using POST. Both request and response are formatted as JSON, and the content type of both is application/json.</p>
+					<h3>O que é</h3>
+					<p>A API de geolocalização do HTML5 é usada para recuperar a posição <b>geofísica</b> do usuário.</p>
+					<p>Como essa informação é privada, a posição não é recuperada a menos que o usuário conceda permissão.</p>
+					<p>As requisições são feitas via HTTPS usando o método POST.</p></br>
+					<p><i>A acurácia é maior em dispositivos que possuem GPS.</i></p>
 				</section>
 				
 				<section data-background="lightblue">
-					<h3>Requisições</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<h3>O que é</h3>
+					<p>A localização e o raio de 'acerto' são baseados em informações enviadas por torres de celular e pontos de WiFi.</p>
+					<p>Para viasualizar a localização no mapa, é necessária a utilização de algum serviço, como o <i>Google Maps</i>.</p>
+					<img src = "assets/code_geo.png">
+				</section>
+				
+				<section data-background="lightblue">
+					<h3>Navegadores</h3>
+					<img src="assets/navigators_geo.png">
+					<p><i>Se o site estiver em um ambiente não-seguro (HTTP), a requisição para solicitar a localização do usuário não funcionará.</i></p>
 				</section>
 
 				<section data-background="lightblue">
-					<h3>Como Usar</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<h3>Usando a API</h3>
+					<p>Principais métodos:</p>
+					<ul>
+						<li><pre>getCurrentPosition()</pre></li>
+						<li><pre>watchPosition()</pre></li>
+						<li><pre>clearWatch()</pre></li>
+					</ul>
+				</section>
+				
+				
+				<section data-background="lightblue">
+					<h3>Usando a API</h3>
+					<p><i>getCurrentPosition()</i></p>
+					<p>É o método usado para retornar a posição do usuário propriamente dita. O método retorna a latitude, a longitude e as propriedades de acurácia.</p>
+					<p>Outras propriedades podem ser retornadas se estiverem disponíveis.</p>
 				</section>
 
+				
+				<section data-background="lightblue">
+					<h3>Usando a API</h3>
+					<p><i>getCurrentPosition(): valores retornados</i></p>
+					<ul>
+						<li><pre>coords.latitude</pre></li>
+						<li><pre>coords.longitude</pre></li>
+						<li><pre>coords.accuracy</pre></li>
+						<li><pre>coords.altitude</pre></li>
+						<li><pre>coords.altitudeAccuracy</pre></li>
+						<li><pre>coords.speed</pre></li>
+						<li><pre>coords.timestamp</pre></li>
+					</ul>
+				</section>
+				
+				<section data-background="lightblue">
+					<h3>Usando a API</h3>
+					<p><i>watchPosition()</i></p>
+					<p>Método que retorna a posição atual do usuário e continua retornando a posição atualizada a medida que o usuário se move.</p>
+					<p><i>clearWatch()</i></p>
+					<p>Interrompe o método <i>watchPosition()</i></p>
+				</section>
+
+				
 				<section data-background="lightblue">
 					<h3>Exemplos</h3>
 					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
 				</section>
 
-				<section data-background="lightblue">
-					<h3>Acurácia</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
-				</section>
-
-				<section data-background="lightblue">
-					<h3>Erros</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
-				</section>
-
-
-				<section data-background="assets/map.png">
+				<section data-background="assets/gamepad_cover.jpeg">
 					<h2>Gamepad API</h2>
 				</section>
 
 				<section data-background="lightblue">
-					<h3>Requisições</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<h3>O que é?</h3>
+					<p>A Gamepad API possibilita a conexão de controles de video games no computador.</p>
+					<ul>
+						<li>Detecta conexão e desconexão de eventos.</li>
+						<li>Reconhece múltiplos gamepads</li>
+						<li>Inspeciona gamepads conectados e reconhece quantos botões eles possuem e qual é o estado de cada um</li>
+					</ul>
 				</section>
 
 				<section data-background="lightblue">
-					<h3>Como Usar</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<h3>Navegadores</h3>
+					<p><i>Não é suportada pelo IE nem pelo Opera.</i></p>
+					<img src = "assets/navigators_game.png">
 				</section>
 
 				<section data-background="lightblue">
-					<h3>Exemplos</h3>
+					<h3>Usando a API</h3>
 					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
 				</section>
 

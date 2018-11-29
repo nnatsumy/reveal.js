@@ -101,13 +101,8 @@
 					<p>Interrompe o método <i>watchPosition()</i></p>
 				</section>
 
-				
-				<section data-background="lightblue">
-					<h3>Exemplos</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
-				</section>
 
-				<section data-background="assets/gamepad_cover.jpeg">
+				<section data-background="assets/gamepad_cover.png">
 					<h2>Gamepad API</h2>
 				</section>
 
@@ -129,22 +124,30 @@
 
 				<section data-background="lightblue">
 					<h3>Usando a API</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<p>Quando um novo gamepad é conectado no computador, a página atual recebe um evento de <i>gamepadconnected</i>. Se o controle já estiver conectado, a página só receberá esse evento caso o usuário acione algum botão.</p>
+					<p>Analogamente, quando o controle é desconectado, a página atual recebe um evento de <i>gamepaddisconnected</i></p>
 				</section>
 
 				<section data-background="lightblue">
-					<h3>Acurácia</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
-				</section>
-
-				<section data-background="lightblue">
-					<h3>Erros</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<h3>Usando a API</h3>
+					<p>Propriedades dos objetos <i>Gamepad</i></p>
+					<ul>
+						<li>id: string contendo informação sobre o controle</li>
+						<li>index: numeração dos gamepads</li>
+						<li>mapping: mapeamento dos controles do browser para os botões do gamepad</li>
+						<li>connected: status de conexão do gamepad</i>
+						<li>buttons: array de <i>GamepadButtons</i></li>
+						<li>axes: array representando os controles com eixos presentes no sistema</li>
+						<li>timestamp: última vez que o controle foi atualizado</li>
 				</section>
 
 				<section data-background="lightblue">
 					<h3>Referências</h3>
-					<p>The Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. This document describes the protocol used to send this data to the server and to return a response to the client.</p>
+					<ul>
+						<li>https://www.w3schools.com/html/html5_geolocation.asp</li>
+						<li>https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/</li>
+						<li>https://developers.google.com/maps/documentation/geolocation</li>
+						<li>http://html5gamepad.com/</li>
 				</section>
 
 			</div>
